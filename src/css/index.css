@@ -1,0 +1,64 @@
+html {
+overflow: auto;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #575757;
+}
+
+.main-menu {
+  height: 38px;
+  width: 100%;
+  line-height: 38px;
+  background-color: #171b1e;
+  background-image: url('../images/bg_main-nav.jpg');
+  background-position: 0 0;
+  background-repeat: repeat;
+  text-align: center;
+  color: #cdcdcd;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.main-menu .menu-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-menu .menu-item {
+  display: inline-block;
+  height: 19px;
+  line-height: 19px;
+}
+
+.main-menu a {
+  display: block;
+  height: 100%;
+  padding: 0 20px;
+  color: inherit;
+  border-radius: 12px;
+  text-decoration: none;
+}
+
+.main-menu a:hover,
+.main-menu .active a {
+  background-color: #98999a;
+  color: #1c2023;
+}
+
+@media (min-width: 600px) {
+  .main-menu {
+    height: 45px;
+    font-size: 16px;
+  }
+}
