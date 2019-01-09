@@ -50,9 +50,23 @@ body {
   margin: auto;
 }
 
+h1,
+h2,
+p {
+  margin: 0;
+}
+
 h1 {
   font-size: 28px;
-  margin: 0;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.4em;
 }
 
 @media (min-width: 480px) {
@@ -187,7 +201,8 @@ h1 {
 
 .intro {
   padding-bottom: 20px;
-  background: url("../images/bg_intro.png") repeat 0 0 #d8cec8;
+  background:  url("../images/content-bg.png") repeat-x 0 100%,
+  url("../images/bg_intro.png") repeat 0 0;
 }
 
 .intro .title-wrapper {
@@ -349,6 +364,40 @@ h1 {
   .platforms a {
     font-size: 14px;
   }
+}
+
+.detail-info h2 {
+  margin-bottom: 16px;
+  color: #915542;
+}
+
+.details-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.details-list .detail::before {
+  content: "";
+  display: inline-block;
+  width: 136px;
+  height: 136px;
+}
+
+.details-list .detail.google-calendar::before {
+  background: url("../gallery/google-calendar.png") no-repeat;
+}
+
+.details-list .detail.dropbox::before {
+  background: url("../gallery/dropbox.png") no-repeat;
+}
+
+.details-list .detail.charts::before {
+  background: url("../gallery/charts.png") no-repeat;
+}
+
+.details-list .detail.planned::before {
+  background: url("../gallery/pvsa.png") no-repeat;
 }
 
 
